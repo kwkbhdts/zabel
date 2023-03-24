@@ -92,5 +92,6 @@ dependencies = [
 name = "zabel"
 version = "0.1.0"
 dependencies = [
+ "serde",
  "toml",
 ]
