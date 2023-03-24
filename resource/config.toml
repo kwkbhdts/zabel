@@ -1,0 +1,68 @@
+# Zabel configuration file
+
+# File path of template file (relative path from zabel.exe)
+template_file_path = "resource/template.png"
+
+# Composition info of the template
+[composition]
+    # Number of flet number output areas
+    number_of_flet_number_areas = 7
+
+    # Number of guitar strings
+    number_of_strings = 6
+
+    # Title output area bbox (by pixel)
+    [composition.title_area]
+        left = 150
+        top = 20
+        right = 1300
+        bottom = 90
+
+    # Page number output area bbox (by pixel)
+    [composition.page_number_area]
+        left = 1350
+        top = 20
+        right = 1550
+        bottom = 90
+
+    # Flet number output area info (by pixel)
+    [[composition.flet_number_areas]]
+        left = 210
+        top = 152 # Line of most high-tone string
+        right = 1550
+        bottom = 255 # Line of low-tone string
+
+    # Flet number output area info (by pixel)
+    [[composition.flet_number_areas]]
+        left = 210
+        top = 437 # Line of most high-tone string
+        right = 1550
+        bottom = 540 # Line of low-tone string
+
+    # Flet number output area info (by pixel)
+    [[composition.flet_number_areas]]
+        left = 210
+        top = 722 # Line of most high-tone string
+        right = 1550
+        bottom = 825 # Line of low-tone string
+
+    # Flet number output area info (by pixel)
+    [[composition.flet_number_areas]]
+        left = 210
+        top = 1007 # Line of most high-tone string
+        right = 1550
+        bottom = 1110 # Line of low-tone string
+
+    # Flet number output area info (by pixel)
+    [[composition.flet_number_areas]]
+        left = 210
+        top = 1292 # Line of most high-tone string
+        right = 1550
+        bottom = 1395 # Line of low-tone string
+
+    # Flet number output area info (by pixel)
+    [[composition.flet_number_areas]]
+        left = 210
+        top = 1577 # Line of most high-tone string
+        right = 1550
+        bottom = 1680 # Line of low-tone string
