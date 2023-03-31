@@ -5,7 +5,7 @@ use std::path::Path;
 use std::fs::File;
 use serde::Deserialize;
 
-use crate::error_util;
+use crate::error_utility;
 use crate::bounding_box::BoundingBox;
 
 /// Config data
@@ -41,7 +41,7 @@ impl Config {
     /// 
     /// # Arguments
     /// * file_path : A file path of a config toml file.
-    pub fn from_file<P: AsRef<Path>>(file_path: &P) -> error_util::Result<Config> {
+    pub fn from_file<P: AsRef<Path>>(file_path: &P) -> error_utility::Result<Config> {
         let mut f = File::open(file_path)?;
         let mut contents = String::new();
         f.read_to_string(&mut contents)?;
