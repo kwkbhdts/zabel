@@ -17,10 +17,9 @@ pub struct Config {
 
     /// Composition info of the template
     composition: CompositionConfig,
-
 }
 
-/// Composition info of the template
+/// Composition info of the template image
 #[derive(Debug)]
 #[derive(Deserialize)]
 pub struct CompositionConfig {
@@ -35,15 +34,13 @@ pub struct CompositionConfig {
 
     /// Flet number output areas (by pixel)
     flet_number_areas: Vec<BoundingBox>,
-
 }
 
 impl Config {
-
-    /// Create Config from a config toml file.
+    /// This method creates Config from a config toml file.
     /// 
-    /// # Params:
-    /// file_path : A file path of a config toml file.
+    /// # Arguments
+    /// * file_path : A file path of a config toml file.
     pub fn from_file<P: AsRef<Path>>(file_path: &P) -> error_util::Result<Config> {
         let mut f = File::open(file_path)?;
         let mut contents = String::new();

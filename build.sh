@@ -6,7 +6,7 @@ pushd $SCRIPT_DIR
 
 cargo build --release
 mkdir -p bin
-cp -f target/x86_64-pc-windows-gnu/release/zabel.exe bin/zabel.exe
+cp -f target/release/zabel.exe bin/zabel.exe
 cp -rf resource bin/
 
 # Back to the saved directory.

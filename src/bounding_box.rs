@@ -4,7 +4,7 @@ use serde::Deserialize;
 
 /// Bounding box
 /// 
-/// # Note:
+/// # Note
 /// BoundingBox contains top-left pixel and doesn't contain bottom-right pixel.
 #[derive(Debug)]
 #[derive(Deserialize)]
@@ -16,12 +16,12 @@ pub struct BoundingBox {
 }
 
 impl BoundingBox {
-    /// Returns the width
+    /// This method returns the width.
     pub fn get_width(&self) -> i32 {
         self.right - self.left
     }
 
-    /// Returns the height
+    /// This method returns the height.
     pub fn get_height(&self) -> i32 {
         self.bottom - self.top
     }
